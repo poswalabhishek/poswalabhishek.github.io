@@ -15,7 +15,7 @@ body {
 /* background-image */
 
 .background-image {
-    height: 65vh;
+    height: 65%;
     background-image: url("images/header.jpg");
     background-size: cover;
     background-position: center;
