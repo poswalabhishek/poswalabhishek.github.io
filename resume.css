@@ -15,10 +15,10 @@ body {
 /* background-image */
 
 .background-image {
-    height: 65%;
+    height: 65vh;
     background-image: url("images/header.jpg");
     background-size: cover;
-    background-position: center;
+    /* background-position: center; */
     background-attachment: fixed;
 }
 
