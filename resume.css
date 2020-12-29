@@ -4,125 +4,98 @@ body {
     font-size: 30px;
 }
 
-/* general text format */
-.general-text {
-    font-size: 1.5rem;
-    font-family: sans-serif;
-    font-weight: 300;
-    color: gray;
-}
 
-/* background-image */
 
-.background-image {
+/* Body Header */
+
+#body-header {
     height: 65vh;
-    background-image: url("images/header.jpg");
+    opacity: 0.8;
+    background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
     background-size: cover;
-    /* background-position: center; */
+    background-position: center;
     background-attachment: fixed;
+    padding-top: 1.2rem;
 }
 
-/* horizontal_list */
+
+
+/* Horizontal Lists */
+
 .horizontal-list {
-    margin: 0;
-}
-.horizontal-list li {
     list-style: none;
-    padding: 0;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.horizontal-list li {
     display: inline-block;
-    margin: 0 1.5rem 0 1.5rem;
+    margin: 0px 8px 8px 0px;
+    font-weight: 100;
     font-size: 0.9rem;
 }
 
 .horizontal-list li a {
     color: white;
     text-decoration: none;
-    transition: color 1s, border-bottom 4s;
-    margin: 0;
 }
 
-.icon-size i {
-    font-size: large;
+.nav-menu li a {
+    transition: color 0.5s, border-bottom 4s;
 }
 
-.horizontal-list li a:hover {
-    color: rgb(88, 113, 122);
-    text-decoration: underline;
+.nav-menu li a:hover {
+    color: lightgrey;
+    border-bottom: 1px solid black;
 }
 
 .text-center {
     text-align: center;
 }
 
-#myname {
-    margin-top: 15vh;
-    color: white;
-    font-size: 2rem;
+
+
+/* Name and Social Icons*/
+
+#name-social-container {
+    margin-top: 20vh;
+}
+
+#my-name {
+    font-size: 3rem;
     letter-spacing: 0.1rem;
-    word-spacing: 0.2rem;
-    opacity: 0.9;
-    text-shadow: 1px 1px 2px #000;
-    transition: width 2s, height 2s, transform 2s;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
 }
 
-#myname:hover {
-    opacity: 1;
-    /* font-size: larger; */
-    text-shadow: 3px 3px 2px #000;
-}
-
-/* social media icons from font awesome */
-.social-media-icons i {
-    font-size: 1.5rem;
-    border-radius: 40%;
-}
-
-.social-media-icons i:hover {
-    box-shadow: 0px 0px 30px 10px black;
-}
-
-/* about image */
-#about {
-    position: relative;
-    width: 100%;
-    height: auto;
-}
-#thumbnail {
-    width: 12rem;
-    height: 12rem;
-    margin: auto;
-    margin-top: -15vh;
-}
-#thumbnail img {
-    height: 100%;
-    width: 100%;
+.social-icons li a i {
+    padding: 10px;
+    font-size: 1rem;
     border-radius: 50%;
-    border: 3px solid white;
-    box-shadow: 0px 0px 60px 40px whitesmoke;
 }
 
-/* about description */
-#my-description {
-    width: 70%;
-    margin: auto;
-    line-height: 2rem;
+.social-icons li a i:hover {
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
 }
 
-/* sections */
-section:nth-child(2n) {
-    background-color: white;
-}
 
-section:nth-child(2n+1) {
-    background-color: #9e9b9b29;
-}
+
+/*Section Classes*/
 
 section {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 20px;
+}
 
+section:nth-child(2n) {
+    background-color: #9e9b9b29;
+}
+
+section:nth-child(2n + 1) {
+    background-color: white;
 }
 
 .section-heading {
@@ -139,14 +112,48 @@ section {
     margin-right: 0.5rem;
 }
 
-.bottom-margin {
-    margin-bottom: 75px;
+
+
+/*About Section*/
+
+#about {
+    height: auto;
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
 }
 
-/* skill section */
+#my-image {
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+    margin-top: -17vh;
+}
+
+#my-image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 1px 1px 10px 2px lightgrey;
+}
+
+#about-para {
+    padding: 10px;
+    width: 70%;
+    text-align: justify;
+    color: grey;
+    line-height: 28px;
+    font-size: 1.1rem;
+    margin: auto;
+}
+
+
+
+/*Skills Section*/
 
 .skills-display {
-    width: 70%;
+    width: 75%;
     padding: 10px;
     margin-bottom: 30px;
     display: flex;
@@ -173,106 +180,57 @@ section {
     color: white;
     font-size: 1rem;
     margin-left: 10px;
-    margin-top: 0.25rem;
     vertical-align: middle;
 }
 
-.mb-blue {
-    background-color: #2857a4;
-}
 
-.mb-orange {
-    background-color: #ec4d1c;
-}
 
-.mb-teal {
-    background-color: #0b8176;
-}
+/* Work Experience */
 
-.mb-light-purple {
-    background-color: #93738c;
-}
-
-/*Percentage Classes */
-
-.eighty-five-percent {
-    height: inherit;
-    width: 85%;
-}
-
-.eighty-percent {
-    height: inherit;
-    width: 80%;
-}
-
-.fifty-percent {
-    height: inherit;
-    width: 50%;
-}
-/* education */
-
-/* experience */
-
-/* experience and education */
-#timeline {
+.timeline {
     position: relative;
     width: 75%;
 }
 
-#timeline-box {
-    position: relative;
+.timeline-box {
+    padding: 5px;
     width: 40%;
-    margin: 5px;
     min-height: 150px;
+    position: relative;
+    left: 5%;
+    text-align: right;
 }
 
-#timeline-box:nth-child(2n) {
+.timeline-box::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: lightgrey;
+    top: 25%;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-box:nth-child(2n) {
     left: 53%;
 }
 
-#description-edu ul, #description-exp ul  {
-    /* list-style: none; */
-    font-size: small;
+.timeline-box:nth-child(2n+1)::after {
+    right: -11.8%;
 }
 
-#degree, #position {
-    text-align: end;
-    color: #2857A6;
-    font-size: smaller;
-    padding: 5px;
+.timeline-box:nth-child(2n)::after {
+    left: -9%;
 }
 
-#employer, #institute-name {
-    margin: 5px 0 0;
-    color: #eb822d;
-    font-weight: 400;
-    font-size: 1.2rem;
-    text-align: right;
-}
-
-#from-to {
-    color: #9e9b9b;
-    font-weight: 100;
-    color: grey;
-    font-size: 1rem;
-    text-align: right;
-}
-
-#description-edu, #description-exp {
-    font-size: 14px;
-    padding: 2px;
-    color: grey;
-    line-height: 20px;
-    margin: 0;
-}
-
-#description-edu li:not(:last-child), #description-exp li:not(:last-child) {
-    padding-bottom: 10px;
+.timeline-container {
+    padding: 8px;
 }
 
 .timeline-logo {
     position: absolute;
-    width: 40px;
+    width: 50px;
     overflow: hidden;
 }
 
@@ -280,38 +238,20 @@ section {
     width: 100%;
 }
 
-#description-edu ul, #description-exp ul {
-    list-style: none;
-}
-
-.text-align-justify {
-    text-align: justify;
-}
-
-.timeline-divider-education {
+#timeline-divider {
+    position: absolute;
+    width: 0;
+    top: 10%;
+    left: 50%;
+    border: 1px dashed #0096fa6b;
     height: 66%;
-    width: 0;
-    top: 10%;
-    left: 50%;
-    position: absolute;
-    border: 3px dashed #0096fa6b;
+    color: #433E3F;
 }
 
-.timeline-divider-experiences {
-    height: 75%;
-    width: 0;
-    top: 10%;
-    left: 50%;
-    position: absolute;
-    border: 3px dashed #0096fa6b;
-}
-
-.time-traveller {
+#timeline-divider .timeline-traveller {
     position: sticky;
-    top: 25%;
-    transform: rotate(90deg);
-    z-index: 1;
-    color: #2857A6;
+    top: 135px;
+    z-index: 2;
 }
 
 #timeline-divider i {
@@ -321,38 +261,41 @@ section {
     color: #2857a4;
 }
 
-#timeline-box:nth-child(2n+1)::after {
-    content: ' ';
-    position: absolute;
-    top: 30%;
-    right: -26%;
-    border-radius: 50%;
-    width: 0.8rem;
-    height: 0.8rem;
-    background-color: lightgrey;
-    z-index: 1;
+.experience-designation {
+    font-size: 1.4rem;
 }
 
-#timeline-box:nth-child(2n)::after {
-    content: ' ';
-    position: absolute;
-    top: 30%;
-    left: -9.5%;
-    border-radius: 50%;
-    width: 0.8rem;
-    height: 0.8rem;
-    background-color: lightgrey;
-    z-index: 1;
+.experience-company-name {
+    margin: 5px 0 0;
+    color: #eb822d;
+    font-weight: 400;
+    font-size: 1.2rem;
 }
 
-.timeline-container {
-    padding: 8px;
+.experience-duration {
+    color: #9e9b9b;
+    font-weight: 100;
+    color: grey;
+    font-size: 1rem;
 }
 
-/* portfolio-image-container */
+.experience-description {
+    font-size: 14px;
+    padding: 2px;
+    color: grey;
+    line-height: 20px;
+}
+
+.text-align-justify {
+    text-align: justify;
+}
+
+
+
+/* Portfolio Section */
+
 #portfolio-container {
     box-sizing: border-box;
-    width: 90%;
     display: flex;
     flex-wrap: wrap;
     padding: 0 50px;
@@ -363,7 +306,7 @@ section {
 .portfolio-image-container {
     max-width: 300px;
     overflow: hidden;
-    margin: 10px;
+    margin: 30px;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -380,7 +323,6 @@ section {
     top: 0;
     left: 0;
     height: 100%;
-    width: 100%;
     color: transparent;
     text-align: center;
     padding: 10px;
@@ -395,14 +337,18 @@ section {
     color: white;
 }
 
-/* contact main */
+
+
+/* Contact Form */
+
 #contact {
+    background-color: #0abcf9;
     background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
     color: white;
     padding-bottom: 40px;
 }
 
-
+#contact h1,
 #contact h1 span {
     color: white;
 }
@@ -421,6 +367,8 @@ section {
 }
 
 #my-details-container h3 {
+    color: white;
+    font-weight: 550;
     font-size: 1.2rem;
 }
 
@@ -446,6 +394,14 @@ section {
 .my-details-info-container i {
     color: white;
 }
+
+.my-details-icon {
+    width: 1rem;
+    height: 1rem;
+    vertical-align: bottom;
+    margin-right: 0.5rem;
+}
+
 
 #contact-form input,
 textarea {
@@ -497,21 +453,70 @@ button:focus {
 }
 
 
-/* margin bottom */
+
+/* Common Margin Classes */
+
 .m0 {
     margin: 0;
-}
-
-.mb50px {
-    margin-bottom: 50px;
 }
 
 .mb75px {
     margin-bottom: 75px;
 }
 
-/* tect highlight */
+.mb50px {
+    margin-bottom: 50px;
+}
+
+
+
+/*common color classes */
+
 .text-highlight {
     color: #2857a4;
     font-weight: 600;
+
+}
+
+
+
+/* setting background-color */
+
+.m-blue {
+    color: #2857a4;
+}
+
+.mb-blue {
+    background-color: #2857a4;
+}
+
+.mb-orange {
+    background-color: #ec4d1c;
+}
+
+.mb-teal {
+    background-color: #0b8176;
+}
+
+.mb-light-purple {
+    background-color: #93738c;
+}
+
+
+
+/*Percentage Classes */
+
+.eighty-five-percent {
+    height: inherit;
+    width: 85%;
+}
+
+.eighty-percent {
+    height: inherit;
+    width: 80%;
+}
+
+.fifty-percent {
+    height: inherit;
+    width: 50%;
 }
