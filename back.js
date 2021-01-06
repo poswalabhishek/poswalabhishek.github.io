@@ -30,3 +30,5 @@ function scrollVertically(targetSection) {
     }
     window.scrollBy(0, 50);
 }
+
+clearInterval(interval);

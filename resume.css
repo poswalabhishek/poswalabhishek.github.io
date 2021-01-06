@@ -630,3 +630,7 @@ button:focus {
     }
 
 }
+
+.text-align-justify {
+    text-align: justify;
+}
