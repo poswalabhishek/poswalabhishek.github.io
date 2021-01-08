@@ -12,13 +12,20 @@ for (var i = 0; i < navMenuAnchorTags.length; i++) {
             console.log(this.textContent);
             var targetSection = document.getElementById(targetSectionID);
             console.log(targetSection);
-            //    interval = setInterval(scrollVertically, 20, targetSection);
 
             interval = setInterval(function () {
                 scrollVertically(targetSection);
             }, 20);
         });
     }
+    window.addEventListener('mousewheel', function(e){
+        wDelta = e.wheelDelta < 0 ? 'down' : 'up';
+        console.log(wDelta);
+    });
+    // if (wDelta  == 'up') {
+    //     break;
+    // }
+    
 }
 
 
@@ -30,5 +37,3 @@ function scrollVertically(targetSection) {
     }
     window.scrollBy(0, 50);
 }
-
-clearInterval(interval);
