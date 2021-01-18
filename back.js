@@ -80,8 +80,6 @@ function scrollVertically(targetSection) {
 
 var progressBars = document.querySelectorAll(".skill-progress > div");
 
-
-
 function initialiseBar(bar) {
     bar.setAttribute("data-visited", false);
     bar.style.width = 0 + '%';
@@ -90,8 +88,6 @@ function initialiseBar(bar) {
 for (var bar of progressBars) {
     initialiseBar(bar);
 }
-
-
 
 function fillBar(bar) {
 
@@ -107,8 +103,6 @@ function fillBar(bar) {
     }, 5);
 
 }
-
-
 
 // This function uses a for loop for individual progress bars.
 function checkScroll() {
@@ -126,8 +120,6 @@ function checkScroll() {
 
     }
 }
-
-
 
 window.addEventListener("scroll", checkScroll);
 
